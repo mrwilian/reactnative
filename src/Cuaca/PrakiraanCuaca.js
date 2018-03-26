@@ -16,7 +16,7 @@ export default class Cuaca extends Component {
   }
 
 getWeather= () => {
-let url = 'http://api.openweathermap.org/data/2.5/weather?q=' + this.state.kota +'&appid=85a3f37c10b33c300b45fa1501ae9f7f&units=metric';
+let url = 'http://api.openweathermap.org/data/2.5/weather?q=' + this.state.kota +'&appid=09a28dad552f1d7f254b2ec3ef7ff1e3&units=metric';
 fetch (url)
 .then ((response) => response.json())
 .then((responseJson) => {
