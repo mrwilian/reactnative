@@ -104,7 +104,7 @@ fetch (url)
       </View>
 
       <View style={styles.Footer}>
-          <Text style={{ textAlign: 'center', padding: 20, fontSize: 14, color: '#FFFFFF'}} >©Naba Ardiawan</Text>
+          <Text style={{ textAlign: 'center', padding: 20, fontSize: 14, color: '#FFFFFF'}} >©Mr Wilian</Text>
       </View>
 
 </View>
