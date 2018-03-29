@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, Button, TextInput, View
 } from 'react-native';
 
-export default class Cuaca extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,7 +14,7 @@ export default class Cuaca extends Component {
   }
 
 getWeather= () => {
-let url = 'http://api.openweathermap.org/data/2.5/weather?q=' + this.state.kota +'&appid=85a3f37c10b33c300b45fa1501ae9f7f&units=metric';
+let url = 'http://api.openweathermap.org/data/2.5/weather?q=' + this.state.kota +'&appid=09a28dad552f1d7f254b2ec3ef7ff1e3&units=metric';
 fetch (url)
 .then ((response) => response.json())
 .then((responseJson) => {
@@ -53,13 +53,13 @@ fetch (url)
               onChangeText={(kota)=>this.setState({kota})}
           />
           </View>
-
           <View style={styles.buttonStyle}>
           <Button
               onPress={
                 () => this.getWeather()
               }
               title="Lihat"
+              color= "#BDC3C7"
               accessibilityLabel="Klik untuk melihat"
             />
           </View>
@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
     borderColor: 'transparent',
     borderWidth: 0,
     borderRadius: 5,
-    color: '#0D47A1'
+
   },
   textBox: {
     margin: 10,
