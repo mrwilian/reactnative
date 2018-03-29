@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, Button, TextInput, View
 } from 'react-native';
 
-export default class Cuaca extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
